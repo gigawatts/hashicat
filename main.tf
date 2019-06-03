@@ -31,6 +31,7 @@ resource "azurerm_network_security_group" "catapp-sg" {
     source_port_range          = "*"
     destination_port_range     = "80"
     source_address_prefix      = "*"
+    #source_address_prefixes      = ["199.38.154.9","40.122.75.225"]
     destination_address_prefix = "*"
   }
 
